@@ -3,47 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulário de Entrega de Materiais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #727272;
+            padding: 20px 30px;
+            border-radius: 50px;
+            box-shadow: 0 0 100px rgba(236, 236, 236, 0.322);
+            text-align: center;
+            width: 350px;
+        }
+        .container img {
+            max-width: 100px;
+            margin-bottom: 1px;
+        }
+        .container h1 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .container label {
+            display: block;
+            text-align: left;
+            margin: 1px 0 1px;
+        }
+        .container select, 
+        .container input[type="number"], 
+        .container button {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 8px;
+            border: 1.5px solid #3c3c3c;
+            border-radius: 30px;
+        }
+        .container button {
+            background-color: #0ee015;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .container button:hover {
+            background-color: #0f6f16;
+        }
+    </style>
 </head>
 <body>
-    <h1>Formulário de Entrega de Materiais</h1>
-    <form id="deliveryForm" action="https://script.google.com/a/macros/fuzzr.com.br/s/AKfycbzKzXiOWaoUMTCdkOpgecmvb_f76R1Hk398g4-2WaXziFLbIR-k2GUHBYhUEWGupkKg/exec" method="post">
-        <label for="usuario">Usuário:</label>
-        <select id="usuario" name="usuario">
-            <option value="CLEITON">CLEITON</option>
-            <option value="EDUARDO">EDUARDO</option>
-            <option value="HIGOR">HIGOR</option>
-            <option value="LUCAS">LUCAS</option>
-            <option value="GUSTAVINHO">GUSTAVINHO</option>
-            <option value="SALGA">SALGA</option>
-            <option value="THEO">THEO</option>
-            <option value="VITOR">VITOR</option>
-        </select><br><br>
-        
-        <label for="casasBahia">Casas Bahia:</label>
-        <input type="number" id="casasBahia" name="casasBahia" value="0"><br><br>
-        
-        <label for="havan">Havan:</label>
-        <input type="number" id="havan" name="havan" value="0"><br><br>
-        
-        <label for="ponto">Ponto:</label>
-        <input type="number" id="ponto" name="ponto" value="0"><br><br>
-        
-        <label for="caoaCherry">CAOA Cherry:</label>
-        <input type="number" id="caoaCherry" name="caoaCherry" value="0"><br><br>
-        
-        <label for="assai">Assai:</label>
-        <input type="number" id="assai" name="assai" value="0"><br><br>
-        
-        <label for="locAcelera">Loc Aceleraí:</label>
-        <input type="number" id="locAcelera" name="locAcelera" value="0"><br><br>
-        
-        <label for="mixAcelera">Mix Aceleraí:</label>
-        <input type="number" id="mixAcelera" name="mixAcelera" value="0"><br><br>
-        
-        <label for="ajusteAcelera">Ajuste Aceleraí:</label>
-        <input type="number" id="ajusteAcelera" name="ajusteAcelera" value="0"><br><br>
-        
-        <button type="submit">Enviar</button>
-    </form>
+    <div class="container">
+        <img src="logo2.png" alt="Logo da Empresa">
+        <h1>Formulário de Entrega de Materiais</h1>
+        <form id="deliveryForm" action="https://script.google.com/a/macros/fuzzr.com.br/s/AKfycbzKzXiOWaoUMTCdkOpgecmvb_f76R1Hk398g4-2WaXziFLbIR-k2GUHBYhUEWGupkKg/exec" method="post">
+            <label for="usuario">Usuário:</label>
+            <select id="usuario" name="usuario">
+                <option value="CLEITON">CLEITON</option>
+                <option value="EDUARDO">EDUARDO</option>
+                <option value="HIGOR">HIGOR</option>
+                <option value="LUCAS">LUCAS</option>
+                <option value="GUSTAVINHO">GUSTAVINHO</option>
+                <option value="SALGA">SALGA</option>
+                <option value="THEO">THEO</option>
+                <option value="VITOR">VITOR</option>
+            </select>
+
+            <label for="casasBahia">Casas Bahia:</label>
+            <input type="number" id="casasBahia" name="casasBahia" value="0">
+
+            <label for="havan">Havan:</label>
+            <input type="number" id="havan" name="havan" value="0">
+
+            <label for="ponto">Ponto:</label>
+            <input type="number" id="ponto" name="ponto" value="0">
+
+            <label for="caoaCherry">CAOA Cherry:</label>
+            <input type="number" id="caoaCherry" name="caoaCherry" value="0">
+
+            <label for="assai">Assai:</label>
+            <input type="number" id="assai" name="assai" value="0">
+
+            <label for="locAcelera">Loc Aceleraí:</label>
+            <input type="number" id="locAcelera" name="locAcelera" value="0">
+
+            <label for="mixAcelera">Mix Aceleraí:</label>
+            <input type="number" id="mixAcelera" name="mixAcelera" value="0">
+
+            <label for="ajusteAcelera">Ajuste Aceleraí:</label>
+            <input type="number" id="ajusteAcelera" name="ajusteAcelera" value="0">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
