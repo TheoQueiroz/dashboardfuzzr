@@ -1,0 +1,50 @@
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #727272;
+            padding: 20px 30px;
+            border-radius: 50px;
+            box-shadow: 0 0 100px rgba(236, 236, 236, 0.322);
+            text-align: center;
+            width: 350px;
+        }
+        .container img {
+            max-width: 100px;
+            margin-bottom: 1px;
+        }
+        .container h1 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .container label {
+            display: block;
+            text-align: left;
+            margin: 1px 0 1px;
+        }
+        .container select, 
+        .container input[type="number"], 
+        .container button {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 8px;
+            border: 1.5px solid #3c3c3c;
+            border-radius: 30px;
+        }
+        .container button {
+            background-color: #0ee015;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .container button:hover {
+            background-color: #0f6f16;
+        }
