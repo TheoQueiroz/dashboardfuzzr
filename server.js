@@ -61,7 +61,7 @@ app.post('/submit', (req, res) => {
   ];
 
   addDataToSheet(data).then(() => {
-    res.send('Dados enviados com sucesso!');
+    res.send('VOLTE AO TRABALHO!');
   }).catch(err => {
     res.status(500).send('Erro ao enviar os dados.');
   });
