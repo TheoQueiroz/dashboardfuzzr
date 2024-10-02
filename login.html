@@ -2,17 +2,122 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Login - Dashboard Fuzzr</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Reset de margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #171d1d;
+            background-image: url(fundo.png);
+            background-repeat: no-repeat ;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: 1275px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #dd6333;
+            background-image: url(logo2.png);
+            background-repeat: no-repeat ;
+            background-position:100px -50px;
+            background-size: 250px;
+            padding: 70px;
+            border-radius: 80px;
+            box-shadow: 10px 20px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 36px;
+            color: #dd6333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #EFEBC8;
+        }
+
+        input[type="email"] {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input[type="email"]:focus {
+            border-color: #546F5E;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        button {
+            background-color: #546F5E;
+            color: #EFEBC8;
+            padding: 12px;
+            font-size: 16px;
+            font-family: 'Titillium Web', sans-serif;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #546F5E;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #EFEBC8;
+        }
+
+        .footer a {
+            color: #546F5E;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+
     <div class="login-container">
-        <h1>Login</h1>
+        <h1>_</h1>
         <form id="loginForm">
             <label for="email">Digite seu e-mail:</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" placeholder="seuemail@fuzzr.com.br" required>
             <button type="submit">Entrar</button>
         </form>
+        <div class="footer">
+            <p>Problemas para acessar? <a href="#">Entre em contato</a></p>
+        </div>
     </div>
 
     <script>
@@ -24,5 +129,6 @@
             window.location.href = 'index.html';  // Redireciona para o formulário
         });
     </script>
+
 </body>
 </html>
