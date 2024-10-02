@@ -49,7 +49,7 @@
             <label for="ponto">Ponto:</label>
             <input type="number" id="ponto" name="ponto" value="0">
 
-            <label for="caoaCherry">CAOA Cherry:</label>
+            <label for="caoaCherry">Caoa Chery:</label>
             <input type="number" id="caoaCherry" name="caoaCherry" value="0">
 
             <label for="assai">Assai:</label>
@@ -70,5 +70,38 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
+
+<script>
+        // Mapeamento de e-mails para nomes
+        const users = {
+            "cleiton@fuzzr.com.br": "Cleiton",
+            "eduardo@fuzzr.com.br": "Eduardo",
+            "higor@fuzzr.com.br": "Higor",
+            "lucas@fuzzr.com.br": "Lucas",
+            "gustavo.domingues@fuzzr.com.br": "Gustavinho",
+            "tony@fuzzr.com.br": "Salga",
+            "theo@fuzzr.com.br": "Theo",
+            "vitor@fuzzr.com.br": "Vitor",
+            "rodrigo@fuzzr.com.br": "Rods"
+        };
+
+        // Recupera o e-mail do localStorage
+        const emailLogado = localStorage.getItem('userEmail');
+
+        // Função para preencher o campo usuário automaticamente
+        function preencherUsuario(email) {
+            if (email) {
+                const nomeUsuario = users[email.toLowerCase()] || "Usuário não encontrado";
+                document.getElementById('usuario').value = nomeUsuario;
+            } else {
+                window.location.href = 'login.html';  // Redireciona para o login se não houver e-mail armazenado
+            }
+        }
+
+        // Chama a função ao carregar a página
+        preencherUsuario(emailLogado);
+
+        
+    </script>
 </body>
 </html>
